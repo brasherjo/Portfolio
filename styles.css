@@ -5,6 +5,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica", "Arial", sans-serif;
+  background-color: #B2D6FF;    /* Light blue */
+  padding: 15px;
+  border-bottom: 1px solid #5D6063;
+  text-align: center;
 }
 
 ul {
@@ -17,4 +21,48 @@ ol {
 
 p {
   text-align: left;
+  background-color: #DDE0E3;    /* Light grey */
+  padding: 10px 0 10px 10px;  /* Top  Right  Bottom  Left */
+  margin-bottom: 10px;          /* Add this */
+}
+
+.synopsis {
+  width: 300px;
+  background-color: #7FFFD4;    /* aquamarine */
+}
+
+.projects {
+  width: 530px;
+  background-color: #DEB887;    /* burley wood */
+}
+
+#contacts {
+  width: 400px;
+  background-color: #FF7F50;    /* coral */
+}
+
+.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7FFFD4;
+  width: 200px;
+}
+
+.links2 {
+  float: left;
+}
+
+.links2 a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.links2 a:hover {
+  background-color: #333;
 }
