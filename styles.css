@@ -1,44 +1,103 @@
-body {
-  color: #414141;    /* Dark gray */
-  background-color: #EEEEEE;    /* Light gray */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+
+.menu_container{
+  color: #000000;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.menu{
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_about{
+  margin: auto;
+}
+.menu_projects{
+  margin:auto;
+}
+.menu_experience{
+  margin: auto;
+}
+.menu_contact{
+  margin: auto;
+}
+.main_content{
+  color: #000000;
+  background-color: #5995DA;
+  padding: 20px;
+  display: flex;
+  justify-content:space-around;
+  flex-direction: column;
+  align-items: center;
+  margin:10px 100px;
+}
+.menu_subject{
+  background-color: #FFF8DC;
+  width:800px;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+.header{
+  margin: 10px;
+  display:flex;
+  justify-content:flex-start;
+  background-color: #B2D6FF;    /* Light blue */
+}
+.synopsis{
+  margin: 10px;
+}
+.data_structure{
+  margin: 10px;
+  background-color: #FFF8DC;
+  text-align: center;
+}
+.ds_list{
+  display: flex;
+  justify-content: center;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica", "Arial", sans-serif;
-  background-color: #B2D6FF;    /* Light blue */
-  padding: 15px;
-  border-bottom: 1px solid #5D6063;
-  text-align: center;
 }
 
 ul {
   list-style-type: circle;
-}
-
-ol {
-  list-style-type: lower-roman;
+  text-align: center;
 }
 
 p {
-  text-align: left;
-  background-color: #DDE0E3;    /* Light grey */
-  padding: 10px 0 10px 10px;  /* Top  Right  Bottom  Left */
-  margin-bottom: 10px;          /* Add this */
-}
-
-.synopsis {
-  width: 300px;
-  background-color: #7FFFD4;    /* aquamarine */
-}
-
-.projects {
-  width: 530px;
-  background-color: #DEB887;    /* burley wood */
-}
-
-#contacts {
-  width: 400px;
-  background-color: #FF7F50;    /* coral */
+  text-align: center;
 }
 
 .links {
@@ -47,7 +106,7 @@ p {
   padding: 0;
   overflow: hidden;
   background-color: #7FFFD4;
-  width: 200px;
+  width: auto;
 }
 
 .links2 {
@@ -55,7 +114,7 @@ p {
 }
 
 .links2 a {
-  display: block;
+  display: flex;
   color: black;
   text-align: center;
   padding: 14px 16px;
